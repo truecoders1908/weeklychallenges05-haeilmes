@@ -38,7 +38,14 @@ namespace weeklyChallenges05
 
         public bool TwoDifferentElementsInArrayCanSumToTargetNumber(int[] nums, int targetNumber)
         {
-            throw new NotImplementedException();
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (nums[i] + nums[i] == targetNumber)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
     }
 }
